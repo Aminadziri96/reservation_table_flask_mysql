@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Result Page
+        </title>
+        <link rel="stylesheet" href="style.css" />
+        <script>
+            const name = sessionStorage.getItem('name');
+             const email = sessionStorage.getItem('email');
+             
+             document.getElementById('result-name').innerHTML = name;
+             document.getElementById('result-surname').innerHTML = email;
+         </script>
+    </head>
+    <body>
+        <h1>
+            Result Page
+        </h1>
+        <h2>
+            name: <span id="result-name" />
+        </h2>
+        <h2>
+            email: <span id="result-email" />
+        </h2>
+    </body>
+</html>
